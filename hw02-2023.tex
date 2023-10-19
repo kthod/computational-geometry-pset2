@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{a4wide}
+\usepackage{color, amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage[document]{ragged2e}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{16pt}
+\renewcommand{\arraystretch}{1.9}
+\usepackage[english]{babel}
+\usepackage{mathtools}
+\usepackage{ragged2e}
+\renewcommand{\baselinestretch}{1.5}
+\input{epsf}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage[math]{cellspace}
+\cellspacetoplimit = 3pt
+\cellspacebottomlimit = 3pt
+
+\begin{document}
+
+
+
+1\\
+
+    Prove the Meister-Gauss formula for the signed area of a simple $k$-gon $(p_0,p_1,\ldots,p_{k-1},p_k)$ (where $p_0=p_k$), that is,
+    \[  E = \frac{1}{2} \sum_{i=0}^{k-1} p_i \times p_{i+1} \]
+    
+    Hint: Prove the formula for $k=3$ directly from definition, and use that for the case $k>3$.
+
+2\\
+
+    Prove that there are only five types of convex, regular polyhedra in $R^3$ (the so-called Platonic solids).
+
+
+3\\
+
+    You are given a polygonal area with a boundary of $n$ vertices and with $h$ holes. The area is not necessarily connected. Compute the number of diagonals and the number of triangles for any triangulation.
+
+4\\
+
+
+    Prove that a  polygonal gallery with $n$ vertices and $h$ holes can be guarded by at most $\lfloor \frac{n+2h}{3} \rfloor$  guards.
+
+
+
+4\\
+Present an efficient algorithm which, given a set $P = \{p_1 , \ldots , p_n \}$ of $n$
+points on the integer grid $\mathbb{Z}^2$, computes the polygon of minimum perimeter that 
+encloses these points, subject to the condition that the sides of this enclosure can be horizontal, 
+vertical, or sloped at ±45◦ (see Figure). 
+
+\textbf{Hint:} $O(n)$ time is possible, but $O(n \log n)$ time acceptable.
+4\\
+Prove that the enclosure produced by your algorithm has the minimum perimeter. Note that
+there may generally be many enclosures with the same perimeter, and your algorithm may
+output any of them.)
+
+
+% \begin{center}
+% \begin{tikzpicture}[
+%     scale=0.5,
+%     dot/.style={circle,fill,inner sep=1.5pt}
+%     ]
+
+%     \draw[step=1.0,black,thin,dotted]  (-1.5,-1.5) grid (6.5,6.5);
+%     \foreach \nx/\ny in {%
+%         1/0, 
+%         0/2, 
+%         1/1,1/3,1/5,
+%         2/2,2/3,2/5,
+%         3/2,
+%         4/1,4/3,
+%         5/3
+%     }
+%         \node[dot] at (\nx,\ny) {};
+
+%     \draw[thick,black,fill=cyan,fill opacity=0.1] (0,2) -- (1,1) -- (1,0) -- (2,1) -- (4,1) -- (5,2) -- (5,3) -- (4,3) -- (2,5) -- (1,5) -- (1,3) -- cycle;
+    
+% \end{tikzpicture}
+% \end{center}
+
+
+
+\end{document}
+$\lambda_1 < \lambda_2$
